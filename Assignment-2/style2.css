@@ -1,0 +1,164 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: "Open Sans", "oswald";
+}
+
+.home {
+    background-image: url("https://bluecreekcorp.com/images/About-Us.jpg");
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 60%;
+}
+
+.logo {
+    height: 100px;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+}
+
+.nav {
+    background-color: #FFA503;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.homeBody {
+    background-color: rgba(0, 0, 0, 50%);
+    bottom: 0;
+    color: white;
+    font-size: 85px;
+    height: fit-content;
+    left: 0;
+    margin: auto;
+    padding: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: fit-content;
+}
+
+.footer {
+    background-color: white;
+    bottom: 0;
+    left: 20%;
+    padding: 1%;
+    position: fixed;
+    width: 58%;
+}
+
+.links {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.about {
+    margin: 50px 0;
+    padding: 0 20%;
+    width: 60%;
+}
+
+.aboutContent {
+    background-color: #D5D5D5;
+    display: inline-block;
+    height: 90vh;
+    padding: 5%;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: 90%;
+}
+
+.aboutUsImg {
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.aboutUsImg:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.contact {
+    padding: 0 20%;
+    width: 60%;
+}
+
+.contactContent {
+    color: white;
+    display: inline-block;
+    height: 90vh;
+    padding: 5%;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: 90%;
+}
+
+.formContainer {
+    background-color: #D5D5D5;
+    left: 0;
+    padding: 30px 0;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+
+.form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.formInput {
+    border: none;
+    border-radius: 20px;
+    margin: 5px 0;
+    outline: none;
+    padding: 10px;
+    width: 60%;
+}
+
+.formButton {
+    background-color: #F3A83C;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 80%);
+    cursor: pointer;
+    outline: none;
+    padding: 10px 25px;
+    width: fit-content;
+}
+
+.formButton:hover, .formButton:focus {
+    background-color: red;
+    cursor: pointer;
+}
+
