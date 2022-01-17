@@ -1,24 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 div {
     background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
-    color: white;
+    color: #fff;
     font-family: Georgia;
     padding: 25px;
     margin: 10px;
 }
 
 p {
-    background-color: black;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    color: white;
+    background-color: #000;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #fff;
     font-family: Roboto;
 }
 
+#test {
+    height: 100vh;
+}
+
 table {
-    background-color: black;
+    background-color: #000;
     width: 100%;
 }
 
 table, th, td {
-    border: 1px solid white;
+    border: 1px solid #fff;
 }

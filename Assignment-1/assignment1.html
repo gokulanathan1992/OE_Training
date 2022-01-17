@@ -7,44 +7,28 @@
 
   <body>
       <div>
-          <p>Todos callados,<br/>
+          <p><i>Todos callados,<br/>
             bajo la luna;<br/>
             el bosque, el lago,<br/>
             el cerro, el monte,<br/>
             bajo la luna,<br/>
-            todos callados.</p>
+            todos callados.</i></p>
       </div>
 
       <div>
           <ol type="a">
-              <li>Go to div with ID (test)</li>
-              <li>Go to iframe (open “the page in which you have created table in question 5” in div with id myiframe)</li>
-              <li>Open new page and display table in question 5 in that page</li>
+              <li><a href="#test">Go to div with ID (test)</a></li>
+              <li><a href="#iframe">Go to iframe (open “the page in which you have created table in question 5” in div with id myiframe)</a></li>
+              <li><a href="./iFrameTable.html">Open new page and display table in question 5 in that page</a></li>
           </ol>
       </div>
 
-      <div>
-          <table>
-              <thead>
-                  <th></th>
-                  <th>Col 1</th>
-                  <th>Col 2</th>
-              </thead>
+      <div id='test'>
+          <p>This is a 'div' element with Id: 'test'</p>
+      </div>
 
-              <tbody>
-                  <tr>
-                      <td>Row 1</td>
-                      <td>11</td>
-                      <td>12</td>
-                  </tr>
-                  
-                  <tr>
-                      <td>Row 2</td>
-                      <td>21</td>
-                      <td>22</td>
-                  </tr>
-              </tbody>
-          </table>
+      <div id="iframe">
+          <iframe src="./iFrameTable.html"></iframe>
       </div>
   </body>
 </html>
