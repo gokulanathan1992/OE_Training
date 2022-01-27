@@ -1,0 +1,274 @@
+* {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    z-index: 10000;
+}
+
+.header > div:first-child {
+    font-size: 30px;
+    padding: 30px;
+}
+
+.header > div:nth-child(2) {
+    padding: 40px;
+}
+
+.page {
+    height: 100vh;
+    width: 100vw;
+}
+
+.page1 {
+    background: url("assets/banner-bg.jpeg") fixed;
+    background-size: cover;
+}
+
+.animationBox {
+    animation-duration: 4s;
+    animation-name: nextPage;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes nextPage {
+    0% {top:50px;}
+    50% {top:0px;}
+    60% {top:50px;}
+    70% {top:25px;}
+    80% {top:50px;}
+    100% {top:50px;}
+}
+
+.arrowBox {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    left: 50vw;
+    padding: 20px 15px;
+    position: absolute;
+    top: 85vh;
+}
+
+.fa-arrow-down {
+    color: #fff;
+    font-size: 30px;
+}
+
+.halfPage {
+    height: 50vh;
+    width: inherit;
+}
+
+.halfPageBg1 {
+    background: url("assets/cars-3-trailer.jpg") left no-repeat, #51B9CC right;
+    background-size: 45% 100%;
+    height: inherit;
+}
+
+.halfPageBg2 {
+    background:  url("assets/cars-3-trailer.jpg") right no-repeat, #51CCA8 left;
+    background-size: 45% 100%;
+    height: inherit;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.card1 {
+    background-color: white;
+    border-radius: 5px;
+    margin: 5%;
+    padding: 60px;
+    width: 50%;
+}
+
+.cardHeader {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font: bold larger Roboto;
+    padding: 30px;
+}
+
+.cardHeader::after {
+    border-bottom: 3px solid #000;
+    content: '';
+    margin: auto;
+    padding-bottom: 20px;
+    width: 60px;
+}
+
+.cardText {
+    padding-bottom: 20px;
+}
+
+.cardBtn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.btn1 {
+    background-color: #51B9CC;
+}
+
+.btn2 {
+    background-color: #51CCA8;
+}
+
+.flexBoxText {
+    color: white;
+    font: bold x-large Roboto;
+    padding: 5%;
+}
+
+.halfPageBg3 {
+    background-image:  linear-gradient(120deg, #51CCA8 50%, #51B9CC 50%);
+    height: inherit;
+    width: 100%;
+}
+
+.card2 {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    width: 25%;
+}
+
+.cardImg {
+    border-radius: 5px 5px 0 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.cardText2 {
+    padding: 0 30px 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .page1 {
+        background-attachment: unset;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .page2 {
+        height: 160vh !important;
+    }
+
+    .page3 {
+        height: auto;
+    }
+
+    .halfPage {
+        height: 80vh;
+    }
+
+    .halfPage3 {
+        height: auto;
+    }
+
+    .halfPageBg1 {
+        background: url("assets/cars-3-trailer.jpg") top no-repeat, #51B9CC bottom;
+        background-size: 100% 50%;
+    }
+
+    .halfPageBg2 {
+        background:  url("assets/cars-3-trailer.jpg") top no-repeat, #51CCA8 bottom;
+        background-size: 100% 50%;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding: 40vh 0;
+    }
+
+    .containerPage3 {
+        padding: 0 !important;
+    }
+
+    .card1 {
+        align-items: center;
+        background-color: white;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 3%;
+        width: auto;
+    }
+
+    .card2 {
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        width: auto;
+    }
+
+    .cardText {
+        text-align: center;
+    }
+}
+
+.footer {
+    background-color: #51CCA8;
+}
+
+.footerHeader {
+    color: #fff;
+}
+
+.footerHeader::after {
+    border-bottom: 3px solid #fff !important;
+}
+
+.footerText {
+    text-align: justify;
+    padding: 10px 60px 30px;
+}
+
+.footerForm {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.formInput {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 10px 20px;
+}
+
+.formBtn {
+    background-color: #6E81D0;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
