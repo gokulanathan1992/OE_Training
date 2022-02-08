@@ -1,0 +1,58 @@
+.logoBox {
+    height: 300px;
+    padding: 50px;
+    width: 300px;
+}
+
+.greyBase {
+    background-color: #bcbcbc;
+    height: 120px;
+    margin: auto;
+    position: relative;
+    top: 175px;
+    width: 250px;
+}
+
+.whiteBg {
+    background-color: #fff;
+    height: 90px;
+    left: 30px;
+    position: relative;
+    width: 190px;
+}
+
+.orangeBlocks {
+    background-color: #f5811e;
+    height: 30px;
+    position: relative;
+    width: 130px;
+}
+
+.block1 {
+    left: 30px;
+    top: 30px;
+}
+
+.block2 {
+    bottom: 50px;
+    left: 35px;
+    transform: rotate(12deg);
+}
+
+.block3 {
+    bottom: 128px;
+    left: 51px;
+    transform: rotate(24deg);
+}
+
+.block4 {
+    bottom: 201px;
+    left: 76px;
+    transform: rotate(36deg);
+}
+
+.block5 {
+    bottom: 269px;
+    left: 109px;
+    transform: rotate(48deg);
+}
