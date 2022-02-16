@@ -1,0 +1,204 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+}
+
+.headerLine1 {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    height: 65px;
+    justify-content: space-between;
+}
+
+.headerLine1Left {
+    align-items: center;
+    display: flex;
+    padding: 0 15px;
+}
+
+.logo {
+    padding: 10px 15px;
+    width: 15vw;
+}
+
+.menuBtn {
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    color: #00000099;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    height: 65px;
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+.active {
+    background-color: #f2f2f2 !important;
+    color: #000;
+    font-weight: bold;
+}
+
+.menuBtn:hover { color: #000; }
+
+.menuBtn:focus {
+    color: #000;
+    background-color: #f2f2f2;
+}
+
+.menuBtn > i {
+    color: #000;
+    margin-right: 8px;
+}
+
+.headerLine1Right {
+    align-items: center;
+    display: flex;
+    padding: 0 15px;
+}
+
+.searchGrp {
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+}
+
+.searchGrp > input, .searchGrp > button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+}
+
+.searchGrp > input {
+    font-size: 1rem;
+    min-width: 150px;
+}
+
+.searchGrp > input:focus { outline: none }
+
+.searchGrp > button {
+    color: #fff;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.searchGrp .tooltip {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #000;
+    padding: 5px;
+    position: absolute;
+    right: calc(100% + 5px);
+    top: -15px;
+    visibility: hidden;
+    width: 350px;
+    z-index: 1;
+}
+
+.searchGrp .tooltip::after, .searchGrp .tooltip::before {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    content: ' ';
+    left: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.searchGrp .tooltip::after {
+    border-left: 5px solid white;
+    margin-left: 0px;
+    z-index: 1;
+}
+
+.searchGrp .tooltip::before {
+    border-left: 5px solid black;
+    margin-left: 1px;
+}
+
+.searchGrp:hover .tooltip { visibility: visible }
+
+.searchGrp:hover { border-color: #000 }
+
+.headerLine2 {
+    align-items: center;
+    background-color: #f2f2f2;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    height: 65px;
+    justify-content: flex-start;
+}
+
+.dropdown { position: relative }
+
+.menuBtn2 {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #00000099;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    height: 65px;
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+.menuBtn2:hover, .menuBtn2:focus { color: #000 }
+
+.menuBtn2:focus + .dropdownContent { display: block }
+
+.downIcon {
+    padding-left: 10px;
+    position: relative;
+}
+
+.upIcon {
+    display: none !important;
+    padding-left: 10px;
+    position: relative;
+}
+
+.menuBtn2:focus > .downIcon { display: none }
+
+.menuBtn2:focus > .upIcon { display: inline-block !important }
+
+.dropdownContent, .nestedDropdownContent {
+    background-color: #fff;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+    display: none;
+    float: left;
+    left: 15px;
+    list-style-type: none;
+    position: absolute;
+    width: max-content;
+    z-index: 1;
+}
+
+.content, .nestedDropdownContent > li {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+
+.content:hover, .nestedDropdownContent > li:hover { background-color: #f2f2f2 }
+
+.content > a, .nestedDropdownContent > li > a {
+    color: #00000099;
+    text-decoration: none;
+}
+
+.content > i { padding-left: 15px }
+
+.nestedDropdownContent {
+    left: 100%;
+    top: 0%;
+}
+
+.content:hover + .nestedDropdownContent { display: block }

@@ -1,0 +1,86 @@
+.carouselContainer {
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+  top: 120px;
+  width: 100%;
+}
+
+.slides {
+  align-items: center;
+  animation-name: slide;
+  animation-duration: 10s;
+  background-blend-mode: multiply;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  flex-direction: column;
+  height: inherit;
+  justify-content: space-evenly;
+  position: absolute;
+  width: inherit;
+}
+
+@keyframes slide {
+  0% {
+    left: 100%;
+    right: 0;
+  }
+
+  5% {
+    left: 0;
+  }
+
+  95% {
+    right: 0;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+.carouselTitle {
+  color: #fff;
+  font-size: 3.5rem;
+  margin: 12.5vh 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.carouselPara {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.75;
+  margin: 0 25vw;
+  text-align: center;
+  width: 40%;
+}
+
+.carouselDots {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+}
+
+.dot {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
+  vertical-align: middle;
+  width: 8px;
+}
+
+.activeDot {
+  background-color: #fff;
+  height: 10px;
+  margin: 0 1px;
+  width: 10px;
+}

@@ -1,0 +1,53 @@
+.footer {
+    color: #767676;
+    position: relative;
+    top: 110px;
+}
+
+.footer1 {
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 5%;
+}
+
+.footer1 p {
+    padding-top: 3%;
+    text-align: center;
+}
+
+.contact {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact > img {
+    filter: invert(1);
+    width: 12vw;
+}
+
+.contactLogos span {
+    color: #cccccc;
+    font-size: 1rem;
+    padding-right: 20px;
+}
+
+.contactLogos i {
+    padding: 0 10px;
+}
+
+.footer2 {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+
+.footer2 div:last-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer2 div:last-child span { padding: 0 10px }

@@ -1,0 +1,46 @@
+.quickOrder {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+    position: relative;
+    top: 110px;
+    width: calc(100% - 120px);
+}
+
+.quickLeft, .quickRight {
+    max-width: 45%;
+    text-align: center;
+}
+
+.quickOrder h1 {
+    font-size: 2.5rem;
+}
+
+.quickOrder p {
+    color: #00000099;
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin: auto;
+    padding: 15px 0;
+    width: 80%;
+}
+
+select {
+    border-color: #F2F2F2;
+    color: #00000099;
+    height: 40px;
+    margin: 15px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+select:hover { border-color: #00000099 }
+
+select option {
+    color: #000;
+}
+
+.quickOrder button {
+    margin: 15px 5px 0;
+}
